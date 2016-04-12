@@ -1,0 +1,164 @@
+body
+{
+	background-color: #6E9438;
+}
+
+header {
+	padding: 20px;
+	margin-bottom: 10px;
+	font: bold 40px verdana, sans-serif;
+	text-align: center;
+	color: black;
+	background-color: #81F781;
+}
+
+div {
+	border: solid;
+	border-color: #81F781;
+	margin-left: 6%;
+}
+#contador {
+	float: left;
+	width: 200px;
+	height: 150px;
+	margin-left: 40px;
+	font-size: 17px;
+	font-weight: bold;
+	overflow: hidden;
+	text-align: center;
+}
+#miniaturas {
+	width: 64%;
+	margin-left: 15px;
+	float: left;
+	font-size: 50px;
+
+}
+.miniatura{
+	width: 90px;
+	margin-left: 60px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+#botons {
+	margin-left: 40px;
+	float: left;
+	font-size: 50px;
+}
+.boton{
+	float: left;
+	margin-left: 60px;
+	cursor: pointer;
+}
+.parpadear {
+	animation-name: parpadeo;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	-webkit-animation-name: parpadeo;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+}
+@-moz-keyframes parpadeo{  
+	0% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes parpadeo {  
+	0% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	100% { opacity: 1.0; }
+}
+
+@keyframes parpadeo {  
+	0% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	100% { opacity: 1.0; }
+}
+
+@media (min-width: 400px) {
+	#contador{
+		width: 50px;
+		height: 50px;
+	}
+ 	.peza {
+    	width: 150px;
+	}
+	#pezas{
+		width: 200px;
+		float: left;
+	}
+	.boton{
+		width: 50px;
+		float: left;
+		margin-left: 60px;
+		cursor: pointer;
+	}
+	#botons{
+		width: 200px;
+		margin-left: 10px;
+		float: left;
+		font-size: 50px;
+	}
+	article{
+		width: 50px;
+		float: left;
+		border: none;
+		border-color: #01DF74;
+		margin-left:  -50px;
+	}
+	#miniaturas{
+		width: 70%;
+	}
+}
+
+article {
+	width: 160px;
+	float: left;
+	border: none;
+	border-color: #01DF74;
+	margin-left:  -50px;
+	/*margin-right:  10px;
+	text-align: center;*/
+}
+
+#pezas {
+	width: 35%;
+	margin-left: 40px;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	float: left;
+	font-size: 102px;
+}
+.peza{
+	margin: 33px;
+	z-index: 10;
+}
+#taboleiro {
+	width: 500px;
+	height: 500px;
+	float: left;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	margin-left: 250px;
+}
+
+td{
+	width: 250px;
+	height: 250px;
+	background-color: #CEF6D8;
+	border-width: 0px;
+	z-index: 9;
+}
+
+
+footer {
+	padding: 20px;
+	text-align: center;
+	color: black;
+	clear: both;
+	background-color: #81F781;
+}
